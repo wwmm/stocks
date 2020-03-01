@@ -1,0 +1,7 @@
+_build
+build
+.vscode
+node_modules
+package-lock.json
+compile_commands.json
+.clangd

@@ -1,0 +1,340 @@
+QMainWindow {
+  background: #cfd8dc;
+}
+
+QPushButton {
+  background-color: #00838f;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  margin: 0;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-indent: 0px;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+}
+
+QPushButton:hover {
+  background-color: #0097a7;
+}
+
+QPushButton:pressed {
+  background-color: #00acc1;
+}
+
+/*
+  Special buttons
+*/
+
+QPushButton#button_add_row,
+QPushButton#button_add_fund,
+QPushButton#button_add_benchmark {
+  background-color: #1565c0;
+}
+
+QPushButton#button_add_row:hover,
+QPushButton#button_add_fund:hover,
+QPushButton#button_add_benchmark:hover {
+  background-color: #1976d2;
+}
+
+QPushButton#button_add_row:pressed,
+QPushButton#button_add_fund:pressed,
+QPushButton#button_add_benchmark:pressed {
+  background-color: #1e88e5;
+}
+
+QPushButton#button_remove_table,
+QPushButton#button_clear_table {
+  background-color: #c62828;
+}
+
+QPushButton#button_remove_table:hover,
+QPushButton#button_clear_table:hover {
+  background-color: #d32f2f;
+}
+
+QPushButton#button_remove_table:pressed,
+QPushButton#button_clear_table:pressed {
+  background-color: #e53935;
+}
+
+/*
+  QFrame
+*/
+
+QFrame {
+  border-radius: 2px;
+  padding: 2px;
+}
+
+QFrame#frame_tableview,
+QFrame#frame_table_selection_stocks,
+QFrame#frame_analysis_pages,
+QFrame#frame_chart {
+  background-color: #fff;
+}
+
+QFrame#frame_return,
+QFrame#frame_time_window,
+QFrame#frame_stock_selection,
+QFrame#frame_explained_variance,
+QFrame#frame_accumulated_return,
+QFrame#chart_cfg_frame {
+  background-color: #f5f5f5;
+}
+
+QListWidget#listwidget_tables {
+  background-color: transparent;
+}
+
+/*
+  QTableView
+*/
+
+QTableView {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+  border: none;
+  selection-background-color: transparent;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+QTableView QHeaderView {
+  background-color: transparent;
+  border: none;
+}
+
+QTableView QHeaderView::section {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+  line-height: 1.6;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+QTableView QTableCornerButton::section {
+  background-color: transparent;
+  border: none;
+}
+
+QTableView::item {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  margin: 3px 3px;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+QTableView::item:selected {
+  background-color: #82b1ff;
+}
+
+/*
+  Tabs
+*/
+
+QTabWidget {
+  background: #eceff1;
+  padding: 6px;
+}
+
+QTabWidget::pane {
+  background: #eeeeee;
+  border-radius: 2px;
+  margin: 0;
+  /* margin-right: 6px; */
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+QTabWidget::tab-bar {
+  alignment: center;
+}
+
+QTabBar::tab {
+  background-color: #bdbdbd;
+  color: #ffffff;
+  /* padding: 6px; */
+  text-transform: uppercase;
+}
+
+QTabBar::tab:hover {
+  background-color: #e0e0e0;
+}
+
+QTabBar::tab:selected {
+  background-color: #eeeeee;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+QTabWidget#tab_widget QTabBar::tab {
+  padding: 6px;
+}
+
+/*
+  StackedWidget
+*/
+
+QStackedWidget QFrame {
+  background: transparent;
+}
+
+/*
+  Scrollbars
+*/
+
+QScrollBar {
+  background-color: white;
+  border: none;
+  width: 12px;
+  margin: 0px 0px 0px 0px;
+}
+
+QScrollBar:horizontal {
+  height: 12px;
+}
+
+QScrollBar::handle {
+  min-height: 0px;
+  border-radius: 4px;
+  background-color: #cfd8dc;
+}
+
+QScrollBar::handle:vertical {
+  min-height: 25px;
+}
+
+QScrollBar::add-line {
+  height: 0px;
+}
+
+QScrollBar::sub-line {
+  height: 0px;
+}
+
+/*
+  QLineEdit
+*/
+
+QLineEdit {
+  color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-transform: none;
+  text-indent: 0px;
+  text-align: start;
+}
+
+QLineEdit#legend_name {
+  margin-left: 0;
+}
+
+/*
+  QLabel. It derives from QFrame so it has to comee after it
+*/
+
+QLabel {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  font-weight: normal;
+}
+
+/*
+  QRadioButton
+*/
+
+QRadioButton {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+QRadioButton::indicator {
+  background-color: #ffffff;
+  width: 12px;
+  height: 12px;
+}
+
+QRadioButton::indicator:checked {
+  background-color: #00838f;
+  border: 2px solid white;
+}
+
+QRadioButton::indicator::unchecked {
+  border: 2px solid #cfd8dc;
+}
+
+/*
+  QSpinBox
+*/
+
+QSpinBox {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+}
+
+QSpinBox::up-button {
+  image: url(:/add.svg);
+  width: 16px;
+  subcontrol-origin: border;
+  subcontrol-position: top right; /* position at the top right corner */
+}
+
+QSpinBox::down-button {
+  image: url(:/remove.svg);
+  width: 16px;
+  subcontrol-origin: border;
+  subcontrol-position: bottom right; /* position at bottom right corner */
+}
+
+/*
+  QGroupBox
+*/
+
+QGroupBox {
+  border: none;
+  margin-top: 2ex;
+}
+
+QGroupBox::title {
+  color: rgba(0, 0, 0, 0.6);
+  subcontrol-origin: margin;
+  subcontrol-position: top center;
+  padding: 0 3px;
+}
+
+/*
+  QProgressBar
+*/
+
+QProgressBar {
+  background-color: #acece6;
+  border-radius: 2px;
+  margin: 0.5rem 0 1rem 0;
+  max-height: 8px;
+}
+
+QProgressBar::chunk {
+  background-color: #26a69a;
+}
