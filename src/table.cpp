@@ -394,16 +394,12 @@ void Table::calculate() {
     double value = model->record(n).value("value").toDouble();
     double last_value = model->record(n + 1).value("value").toDouble();
 
-    double vreturn = value - last_value;
-
-    double return_perc = 100 * vreturn / last_value;
+    double return_perc = 100 * (value - last_value) / last_value;
 
     auto rec = model->record(n);
 
-    rec.setGenerated("return", true);
     rec.setGenerated("return_perc", true);
 
-    rec.setValue("return", vreturn);
     rec.setValue("return_perc", return_perc);
 
     model->setRecord(n, rec);
